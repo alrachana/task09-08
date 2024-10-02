@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     1. Print the number  from 1 to 100 
+// If the number is multiple of 3 print “Three”
+// If the number is multiple of 5 print “five”
+// If the number is multiple of 3 & 5 print “both”
+// o/p : 1
+// 2,”three”, 4, “five”.....,14,”both”..... -->
+for(i=1;1<=50;i++){
+    if(i%3==0 && i%5==0){
+        console.log("both")
+    }else if(i%3==0 && i%5!=0){
+           console.log("three")
+    }else if(i%5==0 && i%3!=0){
+        console.log("five")
+    }else{
+        console.log(i)
+    }
+}
+ //2.Print only prime numbers between 100 & 200
+
+
+for(k=100;k<=200;k++){
+    factors=0
+    for(l=2;l<1;l++){
+        if(k%l==0){
+            factors++
+            break
+        }
+    }
+    if(factors==0){
+        console.log(k,"is prime")
+    }
+}
+
+
+for(o=1;o<=100;o++){
+    factor_s=0
+    for(p=2;p<1;p++){
+        if(o%p==0){
+            factor_s++
+            break
+        }
+    }
+    if(factor_s!==0){
+        console.log(o,"is composite")
+    }
+}
+
+    </script>
+</body>
+</html>
